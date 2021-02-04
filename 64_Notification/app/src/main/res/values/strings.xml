@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SimpleNotif</string>
+    <string name="content_title">Judul / Nama </string>
+    <string name="content_text">Isi Pesan</string>
+    <string name="subtext">Sub text</string>
+    <string name="send_notif">Send Notif</string>
+</resources>

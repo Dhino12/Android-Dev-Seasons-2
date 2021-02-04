@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/frontFragment">
+
+    <fragment
+        android:id="@+id/frontFragment"
+        android:name="com.example.consumerapps.view.FrontFragment"
+        android:label="Consumer Apps"
+        tools:layout="@layout/fragment_front" >
+        <action
+            android:id="@+id/action_frontFragment_to_profileActivity2"
+            app:destination="@id/profileActivity2" />
+        <action
+            android:id="@+id/action_frontFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/profileActivity2"
+        android:name="com.example.consumerapps.view.ProfileActivity"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_profile" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.consumerapps.view.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <argument
+            android:name="userName"
+            app:argType="string"
+            android:defaultValue='""' />
+    </fragment>
+    <activity
+        android:id="@+id/favoriteActivity"
+        android:name="com.example.consumerapps.view.FavoriteActivity"
+        android:label="activity_favorite"
+        tools:layout="@layout/activity_favorite" />
+    <activity
+        android:id="@+id/settingActivity"
+        android:name="com.example.consumerapps.view.SettingActivity"
+        android:label="activity_setting"
+        tools:layout="@layout/activity_setting" />
+</navigation>

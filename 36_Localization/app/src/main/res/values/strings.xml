@@ -1,0 +1,20 @@
+<!--semua string ini harus sama dituliskan pada string terjemahan bhs lainnya kecuali isi dari stringya-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">MyLocalization</string>
+    <string name="hello_world">Hallo World \n %1$s, you have %2$d pokes from %3$s </string>
+    <string name="good_morning">Good Morning</string>
+
+    <plurals name="numberOfSongsAvailable">
+        <item quantity="one">%d song found</item>
+        <item quantity="other">%d song found</item>
+    </plurals>
+
+<!--    xliff atau XML Localisation Interchange File Format.-->
+<!--    Format ini menentukan teks mana yang tidak akan diterjemahkan.-->
+    <string name="app_homeurl">
+        Visit us at <xliff:g id = "application_homepage">https://dicoding.com</xliff:g>
+    </string>
+
+<!--    string untuk title menu-->
+    <string name="change_language_settings">Change Language Setting</string>
+</resources>

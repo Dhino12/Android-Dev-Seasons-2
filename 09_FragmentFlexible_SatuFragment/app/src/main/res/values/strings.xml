@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My FlexibleFragment</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category">Category</string>
+    <string name="this_profile">ini activity Profile</string>
+    <string name="this_catogory">ini Fragment Catogry</string>
+    <string name="category_lifeStyle">Ke Fragment LifeStyle</string>
+    <string name="category_name">Category Name</string>
+    <string name="category_deskripsi">Cateogory Deskripsi</string>
+    <string name="to_profile">Ke Halaman Profile Activity</string>
+    <string name="show_dialog">Tampilkan Sebuah Dialog</string>
+    <string name="to_category">Ke Fragment Category</string>
+    <string name="question_coach">Siapa Pelatih Tersukses Menchester United? </string>
+    <string name="sir_alex_ferguson">Sir Alex Ferguson</string>
+    <string name="jose_mourinho">Jose Mourinho</string>
+    <string name="louis_van_gaal">louis van gaal</string>
+    <string name="david_moyes">David Moyes</string>
+    <string name="choose">Pilih</string>
+    <string name="close">Tutup</string>
+</resources>

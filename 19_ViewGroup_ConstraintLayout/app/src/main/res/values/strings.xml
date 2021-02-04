@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My_Constraint</string>
+    <string name="dummy_photo">1 items</string>
+    <string name="todo">TODO</string>
+    <string name="dummy_value">Rp.250.000</string>
+    <string name="stock">Stock hanya 1 buah</string>
+    <string name="content_text">Sebuah Nendroid Emilia dijual dengan harga seperti diatas lengkap dengan full set outfit, dan puck</string>
+    <string name="spesifikasi">Spesifikasi</string>
+    <string name="nendroid_name">Nendroid Name:</string>
+    <string name="nameValue">Emilia</string>
+    <string name="outfit">Outfit:</string>
+    <string name="outfitValue">elfOutfit</string>
+    <string name="category">category</string>
+    <string name="categValue">Nendroid</string>
+    <string name="seller">DiJual</string>
+    <string name="beli">Buy</string>
+</resources>

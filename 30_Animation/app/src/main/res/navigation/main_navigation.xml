@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myapplication.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileActivity2"
+            app:destination="@id/profileActivity2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.myapplication.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_detailCategoryFragment"
+            app:destination="@id/detailCategoryFragment" />
+    </fragment>
+
+    <activity
+        android:id="@+id/profileActivity2"
+        android:name="com.example.myapplication.ProfileActivity2"
+        android:label="activity_profile2"
+        tools:layout="@layout/activity_profile2">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="http://www.facebook.com"/>
+
+    </activity>
+
+    <fragment
+        android:id="@+id/detailCategoryFragment"
+        android:name="com.example.myapplication.DetailCategoryFragment"
+        android:label="fragment_detail_category"
+        tools:layout="@layout/fragment_detail_category">
+        <argument
+            android:name="name"
+            android:defaultValue="default_name"
+            app:argType="string" />
+        <argument
+            android:name="stock"
+            android:defaultValue="12L"
+            app:argType="long" />
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="https://www.dicoding.com/detail/{name}" />
+        <action
+            android:id="@+id/action_detailCategoryFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

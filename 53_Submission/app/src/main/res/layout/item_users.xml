@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_layout"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_photos_user"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:src="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/item_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/username"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/img_photos_user"/>
+
+    <TextView
+        android:id="@+id/title_repo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/circle"
+        android:gravity="center_vertical"
+        android:text="@string/repository"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/item_userName"
+        app:layout_constraintLeft_toRightOf="@+id/img_photos_user"/>
+
+    <TextView
+        android:id="@+id/item_repo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/_100"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/title_repo"
+        app:layout_constraintLeft_toLeftOf="@+id/title_repo"
+        app:layout_constraintRight_toRightOf="@+id/title_repo"/>
+
+    <TextView
+        android:id="@+id/title_Follower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/circle_foll"
+        android:gravity="center_vertical"
+        android:text="@string/followers"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/title_repo"
+        app:layout_constraintTop_toBottomOf="@+id/item_userName"/>
+
+    <TextView
+        android:id="@+id/item_followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="10dp"
+        android:text="@string/_1001"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/title_Follower"
+        app:layout_constraintLeft_toLeftOf="@+id/title_Follower"
+        app:layout_constraintRight_toRightOf="@+id/title_Follower"/>
+
+    <TextView
+        android:id="@+id/title_Following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/circle_foll"
+        android:gravity="center_vertical"
+        android:text="@string/followers"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/title_Follower"
+        app:layout_constraintTop_toBottomOf="@+id/item_userName"/>
+
+    <TextView
+        android:id="@+id/item_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="10dp"
+        android:text="@string/_1001"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/title_Following"
+        app:layout_constraintLeft_toLeftOf="@+id/title_Following"
+        app:layout_constraintRight_toRightOf="@+id/title_Following"/>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

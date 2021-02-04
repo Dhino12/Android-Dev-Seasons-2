@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    Terdapat 5 kondisi yang dapat dipasang pada tag app:showasaction:-->
+
+<!--    ifRoom, akan menampilkan action ketika ada ruangan pada action bar.-->
+<!--    withText, akan menampilkan action item beserta judulnya.-->
+<!--    never, tidak akan pernah ditampilkan pada action bar dan hanya akan ditampilkan pada overflow menu.-->
+<!--    always, akan selalu tampil pada action bar.-->
+<!--    collapseActionView, berhubungan dengan komponen collapsible .-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:menuCategory="container">
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/ic_search_white_24px"
+            android:title="@string/search"
+            app:showAsAction="collapseActionView|always"
+            app:actionViewClass="androidx.appcompat.widget.SearchView" />
+        <item android:id="@+id/menu1"
+            android:title="@string/menu_1"
+            android:icon = "@drawable/ic_announcement_white_24px"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/menu2"
+            android:title="@string/menu_2" />
+    </group>
+</menu>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyBroadcastReceiver</string>
+    <string name="this_sms_receiver_app">Ini Aplikasi SMS Receiver</string>
+    <string name="download_file">Download a File</string>
+    <string name="coming_from">Coming a Soon</string>
+    <string name="this_play">Oii, Hayuk main Yuk</string>
+    <string name="close">Tutup</string>
+    <string name="check_sms_permission">Check SMS Permission</string>
+    <string name="incoming_massage">Incoming Massage</string>
+    <string name="from">Hallo World %s</string>
+</resources>

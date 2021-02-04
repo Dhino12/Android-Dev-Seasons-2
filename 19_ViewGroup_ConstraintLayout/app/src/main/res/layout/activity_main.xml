@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/img_nendroid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitXY"
+            android:src="@drawable/emilia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="172dp"
+            android:background="#4D000000"
+            android:drawableStart="@drawable/ic_collections_white_18dp"
+            android:drawablePadding="14dp"
+            android:elevation="2dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/dummy_photo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/img_nendroid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.892" />
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/dummy_value"
+            android:textColor="@android:color/black"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_stock"
+            app:layout_constraintEnd_toEndOf="@+id/txt_stock"
+            app:layout_constraintStart_toStartOf="@+id/txt_stock"
+            app:layout_constraintTop_toBottomOf="@+id/img_nendroid"
+            app:layout_editor_absoluteX="0dp"
+            app:layout_editor_absoluteY="343dp" />
+
+        <TextView
+            android:id="@+id/txt_stock"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/stock"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/txt_price"
+            app:layout_editor_absoluteY="399dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1"
+            android:text="@string/content_text"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/txt_stock"
+            app:layout_constraintTop_toBottomOf="@+id/txt_stock"
+            app:layout_editor_absoluteX="0dp"
+            app:layout_editor_absoluteY="429dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="259dp" />
+
+        <include
+            android:id="@+id/include_spek"
+            layout="@layout/layout_spesifiasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline5"/>
+        <include
+            android:id="@+id/include_saller"
+            layout="@layout/layout_saller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include_spek"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
