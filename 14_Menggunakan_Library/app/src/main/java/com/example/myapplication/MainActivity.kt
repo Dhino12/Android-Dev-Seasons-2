@@ -1,11 +1,9 @@
-package com.aplikasi.mylistview
+package com.example.myapplication
 
 import android.content.res.TypedArray
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
-import com.example.myapplication.Hero
-import com.example.myapplication.HeroAdapater
+import androidx.appcompat.app.AppCompatActivity
 
 //=====================================================
 //Membuat List View Menggunakan ArrayAdapter
